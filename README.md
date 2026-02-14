@@ -1,4 +1,4 @@
-# PeerStream WebRTC
+# PeerStream
 
 Private screening room for streaming videos and movies with friends without any hitch.
 
