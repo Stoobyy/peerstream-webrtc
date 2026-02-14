@@ -11,6 +11,14 @@ Live now at https://stooby.in/peerstream/
 - Real-time synchronization
 - Theater support
 
+## How It Works
+
+1.  **Host**: The host selects a video file. The browser captures the video stream using `captureStream()`.
+2.  **Signaling**: The host and guests exchange connection details (ICE candidates, SDP) via the Socket.IO server.
+3.  **P2P Connection**: A direct WebRTC connection is established between the host and each guest.
+4.  **Streaming**: The video and audio are streamed directly from the host's browser to the guests.
+5.  **Sync**: The host sends time updates to keep everyone in sync.
+
 ## Host Bandwidth Requirements
 
 As a P2P host, you stream video directly to each guest. Ensure you have sufficient **upload speed**.
