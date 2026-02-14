@@ -10,6 +10,7 @@ Live now at https://stooby.in/peerstream/
 - Supports subtitles (.vtt, .srt)
 - Real-time synchronization
 - Theater support
+- Remembers timestamps (continue watching where you left off)
 
 ## How It Works
 

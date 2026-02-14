@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PeerStream — Private Screening Room</title>
+    <title>PeerStream - Private Screening Room</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -933,6 +934,21 @@
             width: 80%;
             text-align: center
         }
+
+        .mobile-warning {
+            color: var(--red);
+            font-size: 0.8rem;
+            margin-top: 12px;
+            opacity: 0.8;
+            text-align: center;
+            display: none
+        }
+
+        @media(max-width:768px) {
+            .mobile-warning {
+                display: block
+            }
+        }
     </style>
 </head>
 
@@ -942,7 +958,6 @@
         <header>
             <h1 class="logo"><em>Peer</em>Stream</h1>
             <p class="tagline">Private screening room · peer-to-peer</p>
-
         </header>
         <div id="welcome-screen">
             <div class="card" style="width:100%;max-width:480px;text-align:center;">
@@ -956,6 +971,10 @@
                             maxlength="6"><button class="btn btn-secondary" id="join-btn">Join</button></div>
                 </div>
             </div>
+            <p class="mobile-warning">
+                For the best viewing experience, please use a desktop browser. Some features may not work as intended on
+                mobile devices.
+            </p>
             <div class="history-section" id="history-section" style="display:none;">
                 <div class="card">
                     <div class="history-title"><span>Recent screenings</span><button class="history-clear"
